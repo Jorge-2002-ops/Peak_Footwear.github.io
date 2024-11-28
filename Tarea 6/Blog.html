@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f5b7b1;  /* Fondo beige */
+}
+
+/* Estilos para el título */
+.title1 {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+/* Estilos para el menú de palabras que funcionan como botones */
+.menu {
+    display: flex;
+    justify-content: center; /* Centrar las palabras en el espacio disponible */
+    gap: 20px;  /* Espaciado entre las palabras */
+    flex-grow: 1; /* Los elementos del menú ocupan todo el espacio disponible */
+}
+
+/* Estilos para las palabras (como botones) */
+.button-link {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #8A7F6E;  /* Color de las palabras */
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s;
+    text-align: center;
+}
+
+.button-link:hover {
+    color: #6A5D4D;  /* Color al pasar el mouse sobre la palabra */
+    transform: scale(1.1);  /* Efecto de aumentar el tamaño */
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 15px;  /* Espacio entre botones */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;  /* Color oscuro para los enlaces */
+    font-size: 12px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #f1f1f1;  /* Color de fondo cuando pasa el cursor */
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-top: 50px;
+}
+
+img {
+    width: 100%;
+    max-width: 1500px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+}
+
+.title {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: underline;
+    background-color: rgba(52, 152, 219, 0.5); /* Fondo semitransparente para mejorar la visibilidad */
+    padding: 5px;
+    border-radius: 5px;
+    font-family: monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container2 {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+    margin-top: 50px;
+}
+
+.dropdown-container3, .email-container {
+    width: 45%;
+    padding: 20px;
+    background-color: #f5b7b1;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-container3 select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.image-container4 img {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.email-container5 input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.email-container5 button {
+    width: 100%;
+    padding: 10px;
+    background-color: #f5b7b1;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.email-container5 button:hover {
+    background-color: #218838;
+}
+
+#notification {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #28a745;
+}
+
+  /* Segundo Footer (Título, Línea Divisoria y Columnas) */
+  .footer-2 {
+    background-color: #f5b7b1;
+    color: #000000;
+    padding: 40px 20px;
+    margin-top: 50px;
+}
+
+.footer-2 .footer-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-2 .divider {
+    width: 80%;
+    margin: 0 auto 20px auto;
+    border: 0;
+    border-top: 1px solid #000000;
+}
+
+.footer-2 .columns {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-2 .column {
+    width: 45%;
+}
+
+.footer-2 .column p {
+    margin: 10px 0;
+}
+
+</style>
+
+<body>
+
+    <header class="header">
+        <div class="title1">PEAK FOOTWEAR</div>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="Shop.html">SHOP</a></li>
+                    <li><a href="Blog.html">BLOG</a></li>
+                    <li><a href="Info.html">INFO.</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="image-container">
+        <img src="Imagen12.jpg" alt="Imagen Grande">
+        <div class="title">Blog</div>
+    </div>
+
+    <div class="container2">
+        <!-- Primer contenedor: Menú desplegable y cambio de imagen -->
+        <div class="dropdown-container3">
+            <select id="imageSelect" onchange="changeImage()">
+                <option value="imagen1">Envios 1</option>
+                <option value="imagen2">Envios 2</option>
+                <option value="imagen3">Envios 3</option>
+            </select>
+            
+            <div class="image-container4">
+                <img id="imageDisplay" src="Imagen13.jpg" alt="Imagen seleccionada">
+            </div>
+        </div>
+
+        <!-- Segundo contenedor: Formulario de correo y notificación -->
+        <div class="email-container5">
+            <input type="email" id="emailInput" placeholder="Ingresa tu correo">
+            <button onclick="subscribe()">Suscribirse</button>
+            <p id="notification" style="display:none;">Te notificaremos sobre las nuevas ofertas.</p>
+            <div class="image-container4 x">
+                <img src="Imagen14.jpg" alt="Imagen de suscripción">
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-2">
+        <div class="footer-content">
+            <h3 class="footer-title">Sneaker Shop</h3>
+            <hr class="divider">
+            <div class="columns">
+                <div class="column">
+                    <p>Sneakers</p>
+                    <p>Info.</p>
+                    <p>Contact</p>
+                </div>
+                <div class="column">
+                    <p>Jordan</p>
+                    <p>Adidas</p>
+                    <p>Nike Air</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script>
+        // Función para cambiar la imagen según la opción del menú desplegable
+        function changeImage() {
+            var select = document.getElementById('imageSelect');
+            var imageDisplay = document.getElementById('imageDisplay');
+            var selectedValue = select.value;
+
+            if (selectedValue === 'imagen1') {
+                imageDisplay.src = 'imagen1.jpg';
+            } else if (selectedValue === 'imagen2') {
+                imageDisplay.src = 'imagen2.jpg';
+            } else if (selectedValue === 'imagen3') {
+                imageDisplay.src = 'imagen3.jpg';
+            }
+        }
+
+        // Función para manejar la suscripción y mostrar la notificación
+        function subscribe() {
+            var email = document.getElementById('emailInput').value;
+            if (email) {
+                document.getElementById('notification').style.display = 'block';
+            } else {
+                alert('Por favor, ingresa un correo electrónico.');
+            }
+        }
+    </script>
+</body>
+</html>

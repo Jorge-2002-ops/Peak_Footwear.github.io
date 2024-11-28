@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f5b7b1;  /* Fondo beige */
+}
+
+/* Estilos para el título */
+.title1 {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+/* Estilos para el menú de palabras que funcionan como botones */
+.menu {
+    display: flex;
+    justify-content: center; /* Centrar las palabras en el espacio disponible */
+    gap: 20px;  /* Espaciado entre las palabras */
+    flex-grow: 1; /* Los elementos del menú ocupan todo el espacio disponible */
+}
+
+/* Estilos para las palabras (como botones) */
+.button-link {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #8A7F6E;  /* Color de las palabras */
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s;
+    text-align: center;
+}
+
+.button-link:hover {
+    color: #6A5D4D;  /* Color al pasar el mouse sobre la palabra */
+    transform: scale(1.1);  /* Efecto de aumentar el tamaño */
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 15px;  /* Espacio entre botones */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;  /* Color oscuro para los enlaces */
+    font-size: 12px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #f1f1f1;  /* Color de fondo cuando pasa el cursor */
+}
+
+/* Estilo para el segundo header */
+.second-header {
+    background-image: url('Imagen15.jpg'); /* Aquí va la URL de la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0;
+    color: white;
+    text-align: center;
+}
+
+.second-header .header-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.second-header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.second-header p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Estilo para la sección principal (imagen a la derecha y texto a la izquierda) */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    align-items: center;
+}
+
+.text-left {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.image-right img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Estilo para la línea divisoria */
+.divider {
+    border: 0;
+    border-top: 3px solid #000;
+    margin: 40px 0;
+}
+
+/* Estilo para el párrafo a la izquierda */
+.left-paragraph {
+    padding: 20px;
+    margin-left: 20px;
+}
+
+/* Primer Footer (Formulario de Suscripción) */
+.footer-1 {
+    background-color: #85c1e9;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer-1 .newsletter h3 {
+    margin-bottom: 10px;
+}
+
+.footer-1 form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-1 input[type="email"] {
+    padding: 10px;
+    width: 250px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.footer-1 button {
+    padding: 10px 15px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-1 button:hover {
+    background-color: #e07b00;
+}
+
+/* Segundo Footer (Título, Línea Divisoria y Columnas) */
+.footer-2 {
+    background-color: #f5b7b1;
+    color: #000000;
+    padding: 40px 20px;
+}
+
+.footer-2 .footer-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-2 .divider {
+    width: 80%;
+    margin: 0 auto 20px auto;
+    border: 0;
+    border-top: 1px solid #000000;
+}
+
+.footer-2 .columns {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-2 .column {
+    width: 45%;
+}
+
+.footer-2 .column p {
+    margin: 10px 0;
+}
+
+
+</style>
+<body>
+    <header class="header">
+        <div class="title1">PEAK FOOTWEAR</div>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="Shop.html">SHOP</a></li>
+                    <li><a href="Blog.html">BLOG</a></li>
+                    <li><a href="Info.html">INFO.</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+     <!-- Segundo Header con imagen de fondo -->
+     <header class="second-header">
+        <div class="header-content">
+            <h1>Bienvenido a nuestro sitio web</h1>
+            <p>Encontraras todos tus Sneakers deseados.</p>
+        </div>
+    </header>
+
+    <!-- Sección con imagen a la derecha y texto a la izquierda -->
+    <section class="main-content">
+        <div class="text-left">
+            <h2>PEAK FOOTWEAR</h2>
+            <p>En Peak Footwear, nos apasiona ofrecer lo mejor en sneakers, combinando la más alta calidad, tecnología avanzada y un diseño único para cada paso de tu vida. Fundada con la misión de redefinir el mundo de las zapatillas deportivas, Peak ha logrado posicionarse como una marca líder en el mercado global, siendo reconocida por su enfoque innovador, comodidad y estilo.
+
+                Nuestra Historia
+                Peak Footwear nació con la idea de crear un calzado deportivo que no solo se adaptara a las necesidades de los atletas profesionales, sino que también ofreciera una opción de calidad para todos aquellos que buscan algo más que un simple par de zapatillas. Desde nuestros inicios, nos hemos comprometido a incorporar tecnologías de vanguardia y materiales premium, para garantizar que cada par de Peak sea una extensión de la excelencia deportiva.</p>
+        </div>
+        <div class="image-right">
+            <img src="Imagen16.jpg" alt="Imagen a la derecha">
+        </div>
+    </section>
+
+    <!-- Línea divisoria debajo de la imagen y el texto -->
+    <hr class="divider">
+
+    <!-- Párrafo a la izquierda de la página -->
+    <section class="left-paragraph">
+        <h1>Únete a la Comunidad Peak</h1>
+        <p>No solo vendemos zapatillas, creamos una comunidad de apasionados por el deporte y la moda. Síguenos en nuestras redes sociales y únete a nuestra familia. Comparte tus fotos, tu estilo y tus logros usando #PeakFootwear. ¡Queremos ver cómo llevas la innovación en tus pies!</p>
+            
+            <h1>Compromiso con la Calidad</h1>
+            <p>En Peak Footwear, estamos comprometidos con ofrecer productos de la más alta calidad. Cada par de sneakers pasa por rigurosos controles de calidad para garantizar su durabilidad y confort, para que puedas disfrutar de ellos por más tiempo. Si tienes alguna duda o pregunta, nuestro equipo de atención al cliente está disponible para ayudarte en todo momento.
+            
+            Peak Footwear es más que una marca de sneakers. Es un estilo de vida. Es la promesa de rendir al máximo, lucir increíble y sentirte cómodo mientras lo haces. ¡Descubre tu par perfecto hoy mismo!</p>
+    </section>
+
+    <footer class="footer-1">
+        <div class="newsletter">
+            <h3>Suscríbete</h3>
+            <form>
+                <input type="email" placeholder="Ingresa tu correo electrónico" required>
+                <button type="submit">Suscribirse</button>
+            </form>
+        </div>
+    </footer>
+
+    <!-- Segundo Footer con título, línea divisoria y columnas -->
+    <footer class="footer-2">
+        <div class="footer-content">
+            <h3 class="footer-title">Sneaker Shop</h3>
+            <hr class="divider">
+            <div class="columns">
+                <div class="column">
+                    <p>Sneakers</p>
+                    <p>Info.</p>
+                    <p>Contact</p>
+                </div>
+                <div class="column">
+                    <p>Jordan</p>
+                    <p>Adidas</p>
+                    <p>Nike Air</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

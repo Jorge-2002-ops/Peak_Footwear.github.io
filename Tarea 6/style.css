@@ -1,0 +1,311 @@
+/* Estilos generales para el body y el header */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f5b7b1;  /* Fondo beige */
+}
+
+/* Estilos para el título */
+.title1 {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+/* Estilos para el menú de palabras que funcionan como botones */
+.menu {
+    display: flex;
+    justify-content: center; /* Centrar las palabras en el espacio disponible */
+    gap: 20px;  /* Espaciado entre las palabras */
+    flex-grow: 1; /* Los elementos del menú ocupan todo el espacio disponible */
+}
+
+/* Estilos para las palabras (como botones) */
+.button-link {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #8A7F6E;  /* Color de las palabras */
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s;
+    text-align: center;
+}
+
+.button-link:hover {
+    color: #6A5D4D;  /* Color al pasar el mouse sobre la palabra */
+    transform: scale(1.1);  /* Efecto de aumentar el tamaño */
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 15px;  /* Espacio entre botones */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;  /* Color oscuro para los enlaces */
+    font-size: 12px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #f1f1f1;  /* Color de fondo cuando pasa el cursor */
+}
+
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5b7b1;  /* Fondo beige */
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Caja de texto */
+.text-box {
+    width: 50%;
+    padding: 20px;
+    background-color: white;  /* Beige claro para la caja de texto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra sutil */
+}
+
+/* Título en la caja de texto */
+.title2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: monospace;
+}
+
+/* Descripción dentro de la caja de texto */
+.description {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Caja de la imagen */
+.image-box {
+    width: 50%;
+}
+
+/* Imagen dentro de la caja */
+.image-box img {
+    width: 400PX;
+    height: 500PX;
+    border-radius: 8px;  /* Bordes redondeados para la imagen */
+}
+
+
+
+/* Contenedor principal */
+.container2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d7bde2;  /* Fondo beige */
+    padding: 20px;
+    margin-top: 200px;
+}
+
+/* Caja de texto */
+.text-box2 {
+    width: 50%;
+    padding: 20px;
+    background-color: white;  /* Beige claro para la caja de texto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra sutil */
+}
+
+/* Título en la caja de texto */
+.title3 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: monospace;
+}
+
+/* Descripción dentro de la caja de texto */
+.description {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Caja de la imagen */
+.image-box {
+    width: 50%;
+}
+
+/* Imagen dentro de la caja */
+.image-box img {
+    width: 400PX;
+    height: 500PX;
+    border-radius: 8px;  /* Bordes redondeados para la imagen */
+}
+
+
+
+
+/* Contenedor principal */
+.container3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7dc6f;  /* Fondo beige */
+    padding: 20px;
+    margin-top: 200px;
+}
+
+/* Caja de texto */
+.text-box3 {
+    width: 50%;
+    padding: 20px;
+    background-color: white;  /* Beige claro para la caja de texto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra sutil */
+}
+
+/* Título en la caja de texto */
+.title4 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: monospace;
+}
+
+/* Descripción dentro de la caja de texto */
+.description {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Caja de la imagen */
+.image-box {
+    width: 50%;
+}
+
+/* Imagen dentro de la caja */
+.image-box img {
+    width: 400PX;
+    height: 500PX;
+    border-radius: 8px;  /* Bordes redondeados para la imagen */
+}
+
+
+/* Contenedor principal de la galería */
+.gallery {
+    display: flex;
+    flex-direction: column;  /* Organiza las filas de las imágenes verticalmente */
+    align-items: center;  /* Centra las imágenes */
+    margin-top: 100px;
+}
+
+/* Filas de imágenes */
+.row {
+    display: flex;
+    justify-content: center;  /* Centra las imágenes horizontalmente */
+    gap: 20px;  /* Espacio entre las imágenes */
+    margin-bottom: 20px;
+}
+
+/* Estilos para las imágenes */
+.row img {
+    width: 100px;  /* Ancho fijo para cada imagen */
+    height: 150px;  /* Alto fijo para cada imagen */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Efecto hover en las imágenes */
+.row img:hover {
+    transform: scale(1.05);  /* Aumenta la imagen al pasar el ratón */
+}   
+
+/* Primer Footer (Formulario de Suscripción) */
+.footer-1 {
+    background-color: #85c1e9;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer-1 .newsletter h3 {
+    margin-bottom: 10px;
+}
+
+.footer-1 form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-1 input[type="email"] {
+    padding: 10px;
+    width: 250px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.footer-1 button {
+    padding: 10px 15px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-1 button:hover {
+    background-color: #e07b00;
+}
+
+/* Segundo Footer (Título, Línea Divisoria y Columnas) */
+.footer-2 {
+    background-color: #f5b7b1;
+    color: #000000;
+    padding: 40px 20px;
+}
+
+.footer-2 .footer-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-2 .divider {
+    width: 80%;
+    margin: 0 auto 20px auto;
+    border: 0;
+    border-top: 1px solid #000000;
+}
+
+.footer-2 .columns {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-2 .column {
+    width: 45%;
+}
+
+.footer-2 .column p {
+    margin: 10px 0;
+}
+
